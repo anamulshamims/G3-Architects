@@ -1,0 +1,161 @@
+/* shered Style */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+* {
+    font-family: Work Sans;
+    color: #131313;
+    
+}
+.btn-common{
+    
+    padding: 15px 15px;
+    max-width: fit-content;
+    background-color: #FF900E;
+    border:none;
+    border-radius: 8px;
+    color: #ffffff;
+
+}
+p {
+    font-size: 1rem;
+}
+
+a {
+    font-size: 1.12rem;
+    
+}
+
+h2 {
+    
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+    
+}
+
+h3 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+/* code for header  */
+header {
+padding-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(255, 144, 14, 0.10);
+}
+
+header .top-header {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul>li>a {
+    text-decoration: none;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none
+}
+
+.top-header h3 {
+    margin: 0;
+}
+
+/* code for banner sub-section */
+header .banner {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.banner h2{
+    max-width: 532px;
+    text-align: center;
+}
+.banner p {
+    text-align: center;
+}
+/* code for banner image */
+header .banner-image{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+img{
+    width: 100%;
+}
+/* code for midium device */
+@media screen and (max-width:992px) and (min-width:576px)
+{
+    header .top-header {
+        
+        flex-direction: column;
+    }
+    .top-header h3 {
+        align-self: center;
+    }
+    header ul {
+        display: flex;
+       
+        gap: 30px;
+        list-style: none;
+        align-self: center;
+        padding-left: 0;
+    }
+   
+}
+/* code for features section  */
+section.features   {
+    width: 80%;
+    margin: 40px  auto 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.features .feature-image{
+  width: 45%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+}
+.features .feature-content{
+    width: 45%;
+    align-self: center;
+}
+/* for miduam devices */
+@media screen and (max-width:992px) and (min-width:576px)
+{
+
+    section.features   {
+        
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap:20px;
+    }
+    .features .feature-image{
+        width: 80%;
+          
+      }
+      .features .feature-content{
+          width: 80%;
+          
+      }
+
+}
