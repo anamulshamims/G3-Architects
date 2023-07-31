@@ -101,7 +101,7 @@ header .banner-image{
 img{
     width: 100%;
 }
-/* code for midium device */
+/* code for midium device resopsive header section */
 @media screen and (max-width:992px) and (min-width:576px)
 {
     header .top-header {
@@ -121,6 +121,43 @@ img{
     }
    
 }
+/* code for small device resopsive header section */
+@media screen and (max-width:576px)
+{
+    header .top-header {
+        
+        flex-direction: column;
+    }
+    .top-header h3 {
+        align-self: center;
+    }
+    header ul {
+        display: flex;
+       
+        gap: 30px;
+        list-style: none;
+        align-self: center;
+        padding-left: 0;
+    }
+    .banner h2{
+        font-size: 3.3rem;
+    }
+    .top-header h3 {
+        align-self: center;
+        font-size: 2.8rem;
+        width: 301px;
+        margin: 0 auto;
+    }
+header ul {
+    display: flex;
+    gap: 5px;
+    list-style: none;
+    align-self: center;
+    padding-left: 0;
+    width: 100%;
+}
+   
+}
 /* code for features section  */
 section.features   {
     width: 80%;
@@ -138,17 +175,20 @@ section.features   {
     width: 45%;
     align-self: center;
 }
-/* for miduam devices */
+/* for miduam devices  resposnive freture section*/
 @media screen and (max-width:992px) and (min-width:576px)
 {
 
-    section.features   {
+    
         
-        justify-content: center;
-        flex-direction: column-reverse;
-        align-items: center;
-        gap:20px;
-    }
+        section.features {
+            width: 80%;
+            margin: 10px auto 0px auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column-reverse;
+        }
+    
     .features .feature-image{
         width: 80%;
           
@@ -157,5 +197,33 @@ section.features   {
           width: 80%;
           
       }
+
+}
+/* for small devices feature section  resposnive*/
+@media screen and (max-width:576px)
+{
+
+    section.features {
+        width: 80%;
+        margin: 10px auto 0px auto;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+    .features .feature-image{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+          
+      }
+      .features .feature-content{
+          width: 80%;
+          
+      }
+      .features h3{
+        font-size: 2.7rem;
+      }
+      
 
 }
