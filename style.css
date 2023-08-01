@@ -2,40 +2,44 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap');
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
+
 * {
     font-family: Work Sans;
     color: #131313;
-    
+
 }
-.btn-common{
-    
+
+.btn-common {
+
     padding: 15px 15px;
     max-width: fit-content;
     background-color: #FF900E;
-    border:none;
+    border: none;
     border-radius: 8px;
     color: #ffffff;
 
 }
+
 p {
     font-size: 1rem;
+    color:#727272;
 }
 
 a {
     font-size: 1.12rem;
-    
+
 }
 
 h2 {
-    
+
     font-size: 4rem;
     font-weight: 700;
     margin: 0;
-    
+
 }
 
 h3 {
@@ -44,9 +48,23 @@ h3 {
     margin: 10px 0;
 }
 
+h4 {
+    color: #131313;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+}
+.box{
+    border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+padding: 10px;
+margin: 10px 0;
+}
+
 /* code for header  */
 header {
-padding-top: 20px;
+    padding-top: 20px;
     width: 100%;
     margin: 0 auto;
     background: rgba(255, 144, 14, 0.10);
@@ -85,120 +103,135 @@ header .banner {
     margin: 20px auto;
 }
 
-.banner h2{
+.banner h2 {
     max-width: 532px;
     text-align: center;
 }
+
 .banner p {
     text-align: center;
 }
+
 /* code for banner image */
-header .banner-image{
+header .banner-image {
     width: 80%;
     margin: 0 auto;
     padding-bottom: 30px;
 }
-img{
+
+img {
     width: 100%;
 }
+
 /* code for midium device resopsive header section */
-@media screen and (max-width:992px) and (min-width:576px)
-{
+@media screen and (max-width:992px) and (min-width:576px) {
     header .top-header {
-        
+
         flex-direction: column;
     }
+
     .top-header h3 {
         align-self: center;
     }
+
     header ul {
         display: flex;
-       
+
         gap: 30px;
         list-style: none;
         align-self: center;
         padding-left: 0;
     }
-   
+
 }
+
 /* code for small device resopsive header section */
-@media screen and (max-width:576px)
-{
+@media screen and (max-width:576px) {
     header .top-header {
-        
+
         flex-direction: column;
     }
+
     .top-header h3 {
         align-self: center;
     }
+
     header ul {
         display: flex;
-       
+
         gap: 30px;
         list-style: none;
         align-self: center;
         padding-left: 0;
     }
-    .banner h2{
+
+    .banner h2 {
         font-size: 3.3rem;
     }
+
     .top-header h3 {
         align-self: center;
         font-size: 2.8rem;
         width: 301px;
         margin: 0 auto;
     }
-header ul {
-    display: flex;
-    gap: 5px;
-    list-style: none;
-    align-self: center;
-    padding-left: 0;
-    width: 100%;
+
+    header ul {
+        display: flex;
+        gap: 5px;
+        list-style: none;
+        align-self: center;
+        padding-left: 0;
+        width: 100%;
+    }
+
 }
-   
-}
+
 /* code for features section  */
-section.features   {
+section.features {
     width: 80%;
-    margin: 40px  auto 0 auto;
+    margin: 40px auto 0 auto;
     display: flex;
     justify-content: space-evenly;
 }
-.features .feature-image{
-  width: 45%;
+
+.features .feature-image {
+    width: 45%;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
-.features .feature-content{
+
+.features .feature-content {
     width: 45%;
     align-self: center;
 }
-/* for miduam devices  resposnive freture section*/
-@media screen and (max-width:992px) and (min-width:576px)
-{
 
-    
-        
-        section.features {
-            width: 80%;
-            margin: 10px auto 0px auto;
-            display: flex;
-            justify-content: space-evenly;
-            flex-direction: column-reverse;
-        }
-    
-    .features .feature-image{
+/* for miduam devices  resposnive freture section*/
+@media screen and (max-width:992px) and (min-width:576px) {
+
+
+
+    section.features {
         width: 80%;
-          
-      }
-      .features .feature-content{
-          width: 80%;
-          
-      }
+        margin: 10px auto 0px auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column-reverse;
+    }
+
+    .features .feature-image {
+        width: 80%;
+
+    }
+
+    .features .feature-content {
+        width: 80%;
+
+    }
 
 }
+
 /* for small devices feature section  resposnive*/
 @media screen and (max-width:576px)
 {
@@ -210,20 +243,104 @@ section.features   {
         flex-direction: column-reverse;
         gap: 15px;
     }
-    .features .feature-image{
+
+    .features .feature-image {
         width: 100%;
         display: flex;
         gap: 10px;
         flex-direction: column;
-          
-      }
-      .features .feature-content{
-          width: 80%;
-          
-      }
-      .features h3{
+
+    }
+
+    .features .feature-content {
+        width: 80%;
+
+    }
+
+    .features h3 {
         font-size: 2.7rem;
-      }
-      
+    }
+
+
+}
+
+/* feature section 2  */
+section.feature-2 {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+   
+}
+.feature-2-content{
+    width:50%;
+}
+.feature-2-content p{
+    margin: 10px 0 20px 0;
+    
+}
+.feature-2-image{
+    width:50%;
+    margin-left: 100px;
+   
+    
+    
+}
+.feature-2-image>div{
+    
+    height: 750px;
+    width: 100%;
+    
+}
+.experience{
+    background-color: #FF900E;
+    
+    padding: 2rem;
+    border-radius: 8px;
+    z-index: 1;
+    position: relative;
+    bottom: 100px;
+    left: -45px;
+    width: 250px;
+    
+}
+.experience div{
+    color: #FFF;
+   
+}
+/* responsive for large screen feature-2  */
+@media screen and (max-width:992px) and (min-width:576px){
+
+    .feature-2-image {
+        width: 80%;
+        margin-left: 0;
+    }
+    section.feature-2 {
+        
+        flex-direction: column;
+    }
+    .feature-2-content {
+        width: 80%;
+    }
+
+
+
+}
+/* responsive for mobile screen feature-2  */
+@media screen and (max-width:576px){
+    .feature-2-image {
+        width: 100%;
+        
+    }
+    section.feature-2 {
+        
+        flex-direction: column;
+    }
+    .feature-2-content {
+        width: 100%;
+    }
+
+
+
 
 }
