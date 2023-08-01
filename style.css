@@ -322,14 +322,16 @@ section.feature-2 {
     .feature-2-content {
         width: 80%;
     }
+    
 
 
 
 }
 /* responsive for mobile screen feature-2  */
-@media screen and (max-width:576px){
+@media screen and (max-width:576px)and (min-width:200px){
     .feature-2-image {
         width: 100%;
+        margin-left: 0;
         
     }
     section.feature-2 {
@@ -339,8 +341,15 @@ section.feature-2 {
     .feature-2-content {
         width: 100%;
     }
-
-
+    
+    
+    .experience{
+        bottom: 100px;
+        left: auto;
+    margin: auto;
+    position: relative;
+    max-width: 240px;
+    }
 
 
 }
