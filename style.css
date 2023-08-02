@@ -492,14 +492,21 @@ section.feature-2 {
 
 /* footer section  */
 footer {
-    display: flex;
+    
     width: 80%;
-    height: 60px;
+    
     margin: 0 auto 30px auto;
-
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    padding: 10px;
     border-radius: 8px;
     background: #FFF4E7;
 
+}
+@media screen and (max-width:576px) {
+    footer{
+        padding: 5px;
+    }
+
+
+    }
 }
